@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>palindrome</title>
+</head>
+<body>
+<script>
+  function isPalindrome(s){
+    let str = s.split("");
+    let n = str.length-1; let result ='';
+    for (let i =0 ; i <= Math.ceil(str.length/2);i++){
+      if (str[i]==str[n-i]){
+        result = 'true';
+      } else result ='false';
+    }
+    if (result == 'true') {
+      alert('String is palindrome')
+    } else  alert('String is not palindrome')
+  }
+</script>
+</body>
+</html>
